@@ -5,5 +5,5 @@
 import math
 n_minutes = int(input())
 n_hours = math.trunc(n_minutes/60)
-print(math.fmod(n_hours,24))
+print(int(math.fmod(n_hours,24)))
 print(n_minutes - n_hours * 60)
