@@ -4,6 +4,6 @@
 #Учтите, что число n может быть больше, чем количество минут в сутках.
 import math
 n_minutes = int(input())
-Hours_ = math.trunc(n_minutes/60)
-print(Hours_) #math.trunc возвращает целое без остатка
-print(n_minutes - Hours_ * 60)
+n_hours = math.trunc(n_minutes/60)
+print(math.fmod(n_hours,24))
+print(n_minutes - n_hours * 60)
